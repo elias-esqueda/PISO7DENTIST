@@ -33,9 +33,11 @@
   --surface: #ffffff;
   --surface-muted: var(--cream-100);
   --border-subtle: var(--cream-200);
-  --accent: var(--gold-600);
-  --accent-strong: var(--gold-700);
+  --accent: #96700f;
+  --accent-strong: #6e5321;
   --muted-foreground: var(--stone-600);
+  --glow-accent: rgba(150, 112, 15, 0.16);
+  --glow-secondary: rgba(124, 92, 59, 0.12);
 
   --shadow-color: 30 20 8;
 }
@@ -49,6 +51,8 @@
   --accent: var(--gold-400);
   --accent-strong: var(--gold-300);
   --muted-foreground: var(--stone-400);
+  --glow-accent: rgba(216, 182, 121, 0.16);
+  --glow-secondary: rgba(124, 92, 59, 0.12);
 
   --shadow-color: 0 0 0;
 }

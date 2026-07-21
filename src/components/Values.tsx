@@ -15,8 +15,8 @@ export function Values() {
             </Reveal>
             <Reveal delay={0.05}>
               <h2 className="text-balance font-display text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl">
-                Cuatro pisos de
-                <span className="text-accent italic"> confianza.</span>
+                Razones para elegir
+                <span className="text-accent italic"> Piso7.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.12}>
@@ -25,14 +25,10 @@ export function Values() {
                 target="_blank"
                 className="mt-8 inline-flex items-center gap-3 rounded-[2px] border border-border-subtle bg-surface px-6 py-5 transition-colors hover:border-accent"
               >
-                <span className="flex items-center gap-1 text-accent">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-current" />
-                  ))}
-                </span>
+                <Star className="h-4 w-4 text-accent" />
                 <span className="flex flex-col">
                   <span className="font-display text-base text-foreground">
-                    Opiniones en Google
+                    Lee nuestras opiniones en Google
                   </span>
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
                     Piso7 Dental · {SITE.city}

@@ -1,6 +1,6 @@
 export const SITE = {
   name: "Piso7 Dental",
-  tagline: "Odontología Estética Integral",
+  tagline: "Odontología de Alto Nivel",
   city: "Hermosillo, Sonora",
   phoneDisplay: "(662) 104 49 04",
   phoneWa: "526621044904",
@@ -97,6 +97,7 @@ export const DOCTORS: Doctor[] = [
     bio: "Al frente de Piso7 Dental, el Dr. Inzunza combina rehabilitación oral, implantología y odontología estética integral para toda la familia, con una visión clínica creativa y de detalle.",
     quote: "Confía en tu sonrisa. Confía en mí.",
     tags: ["Rehabilitación oral", "Implantes", "Carillas"],
+    photo: "/images/doctores/inzunza.jpg",
     social: [{ label: "Facebook", href: "https://www.facebook.com/drcarlosinzunza/" }],
   },
   {
@@ -107,6 +108,7 @@ export const DOCTORS: Doctor[] = [
     bio: "Especialista en diseño de sonrisa y odontología estética, el Dr. Cambustón une precisión clínica y sentido artístico en cada tratamiento que firma.",
     quote: "Cada sonrisa se diseña, se cuida y se firma.",
     tags: ["Diseño de sonrisa", "Estética dental", "Carillas"],
+    photo: "/images/doctores/cambuston.jpg",
     social: [{ label: "Instagram", href: "https://www.instagram.com/drjesuscambuston/" }],
   },
 ];

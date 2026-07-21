@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
-import { ToothMark } from "./ToothMark";
 import { ThemeToggle } from "./ThemeToggle";
 import { NAV_LINKS, SITE, waLink } from "@/lib/constants";
 
@@ -35,18 +35,15 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:px-8" style={{ height: "4.5rem" }}>
-        <Link href="#top" className="flex items-center gap-3 group">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-full border border-accent/50 text-accent transition-transform duration-500 group-hover:rotate-[8deg]">
-            <ToothMark className="h-4.5 w-4.5" />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-display text-lg font-semibold tracking-tight text-foreground">
-              piso7
-            </span>
-            <span className="font-mono text-[9px] uppercase tracking-[0.35em] text-muted-foreground">
-              Dental
-            </span>
-          </span>
+        <Link href="#top" className="group flex items-center">
+          <Image
+            src="/logo-full.svg"
+            alt="Piso7 Dental"
+            width={44}
+            height={44}
+            priority
+            className="h-11 w-11 transition-transform duration-500 group-hover:rotate-[8deg]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">

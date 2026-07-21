@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { FacebookIcon, InstagramIcon } from "./BrandIcons";
-import { ToothMark } from "./ToothMark";
 import { NAV_LINKS, SITE, waLink } from "@/lib/constants";
 
 const SOCIALS = [
@@ -16,16 +16,14 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 gap-12 border-b border-ink-700 pb-14 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="#top" className="flex items-center gap-3">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-gold-400/50 text-gold-400">
-                <ToothMark className="h-4.5 w-4.5" />
-              </span>
-              <span className="flex flex-col leading-none">
-                <span className="font-display text-lg font-semibold text-cream-50">piso7</span>
-                <span className="font-mono text-[9px] uppercase tracking-[0.35em] text-stone-500">
-                  Dental
-                </span>
-              </span>
+            <Link href="#top" className="flex items-center">
+              <Image
+                src="/logo-full.svg"
+                alt="Piso7 Dental"
+                width={48}
+                height={48}
+                className="h-12 w-12"
+              />
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-stone-400">
               Odontología estética integral en {SITE.city}. Tu sonrisa, en el

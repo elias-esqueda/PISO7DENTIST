@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { FloorTag } from "./FloorTag";
-import { ToothMark } from "./ToothMark";
 import { Reveal } from "./Reveal";
 import { SITE } from "@/lib/constants";
 
@@ -8,17 +8,17 @@ export function About() {
     <section id="nosotros" className="relative bg-background py-28 sm:py-36">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-5 sm:px-8 lg:grid-cols-2">
         <Reveal>
-          <div className="relative aspect-[4/5] w-full max-w-lg overflow-hidden rounded-[2px] border border-border-subtle">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundImage:
-                  "repeating-linear-gradient(100deg, var(--ink-800) 0 14px, var(--ink-900) 14px 28px)",
-              }}
+          <div className="relative aspect-[4/5] w-full max-w-lg overflow-hidden rounded-[2px] border border-border-subtle bg-ink-950">
+            <Image
+              src="/images/clinica/recepcion.jpg"
+              alt="Interior de Piso7 Dental en Hermosillo"
+              fill
+              sizes="(min-width: 1024px) 520px, 90vw"
+              style={{ objectPosition: "78% 30%" }}
+              className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-ink-950/10 via-ink-950/60 to-ink-950/95" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 px-10 text-center">
-              <ToothMark className="h-16 w-16 text-gold-400" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-950/85 via-ink-950/15 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-3 px-10 pb-10 text-center">
               <p className="font-display text-3xl italic leading-tight text-cream-50">
                 &ldquo;Un espacio pensado para que confíes en tu sonrisa&rdquo;
               </p>

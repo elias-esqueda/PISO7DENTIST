@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <circle cx="120" cy="120" r="120" fill="#221e1d" />
+  <circle cx="120" cy="70" r="43" fill="none" stroke="#f7f4ef" stroke-width="3" />
+  <path
+    d="M110.5 96.5C106.5 96.5 105.6 92.4 106.5 88.9C107.4 85.4 104.4 81.5 102.4 77C100.4 72.5 102.4 68 106.9 66.9C110.4 65.6 113.6 68 115.5 71C117.4 68 120.6 65.6 124.1 66.9C128.6 68 130.6 72.5 128.6 77C126.6 81.5 123.6 85.4 124.5 88.9C125.4 92.4 124.5 96.5 120.5 96.5C118 96.5 117.6 93.6 117.2 91C116.8 89 116 87.6 115.5 87.6C115 87.6 114.2 89 113.8 91C113.4 93.6 113 96.5 110.5 96.5Z"
+    fill="none"
+    stroke="#f7f4ef"
+    stroke-width="3.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <text
+    x="120"
+    y="168"
+    text-anchor="middle"
+    font-family="Manrope, Arial, Helvetica, sans-serif"
+    font-weight="500"
+    font-size="42"
+    letter-spacing="-1"
+    fill="#f7f4ef"
+  >piso7</text>
+  <text
+    x="120"
+    y="192"
+    text-anchor="middle"
+    font-family="Manrope, Arial, Helvetica, sans-serif"
+    font-weight="500"
+    font-size="13"
+    letter-spacing="5.5"
+    fill="#f7f4ef"
+  >DENTAL</text>
+</svg>
