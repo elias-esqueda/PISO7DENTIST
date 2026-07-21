@@ -1,60 +1,27 @@
 import Link from "next/link";
-import { Star, ArrowUpRight } from "lucide-react";
-import { FloorTag } from "./FloorTag";
-import { Reveal } from "./Reveal";
+import { ArrowUpRight } from "lucide-react";
 import { VALUES, SITE } from "@/lib/constants";
+import { Reveal } from "./Reveal";
 
 export function Values() {
   return (
-    <section className="relative bg-surface-muted/40 py-28 sm:py-36">
-      <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1.1fr] lg:items-end">
-          <div>
-            <Reveal>
-              <FloorTag code="P7·05" label="Por qué Piso7" className="mb-6" />
+    <section className="grain relative overflow-hidden bg-ink-950 py-24 text-cream-50 sm:py-32 lg:py-40">
+      <div className="absolute inset-0 mineral-lines opacity-50" />
+      <div className="relative mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+        <Reveal><p className="text-center font-mono text-[9px] uppercase tracking-[.32em] text-gold-400">Nuestra forma de cuidar</p></Reveal>
+        <Reveal delay={.05}><h2 className="mx-auto mt-8 max-w-6xl text-center font-display text-[clamp(3.5rem,7.4vw,8rem)] leading-[.84] tracking-[-.05em]">Lo extraordinario está <span className="italic text-gold-300">en los detalles.</span></h2></Reveal>
+        <div className="mt-20 grid border-t border-white/20 sm:grid-cols-2 lg:grid-cols-4">
+          {VALUES.map((value, index) => (
+            <Reveal key={value.code} delay={index * .07}>
+              <div className="min-h-52 border-b border-white/20 p-6 sm:border-r lg:min-h-64 lg:p-8">
+                <span className="font-mono text-[9px] tracking-[.22em] text-gold-400">{value.code}</span>
+                <h3 className="mt-14 font-display text-3xl">{value.title}</h3>
+                <p className="mt-3 max-w-xs text-sm leading-6 text-stone-400">{value.description}</p>
+              </div>
             </Reveal>
-            <Reveal delay={0.05}>
-              <h2 className="text-balance font-display text-4xl leading-[1.05] tracking-tight text-foreground sm:text-5xl">
-                Razones para elegir
-                <span className="text-accent italic"> Piso7.</span>
-              </h2>
-            </Reveal>
-            <Reveal delay={0.12}>
-              <Link
-                href={SITE.mapsUrl}
-                target="_blank"
-                className="mt-8 inline-flex items-center gap-3 rounded-[2px] border border-border-subtle bg-surface px-6 py-5 transition-colors hover:border-accent"
-              >
-                <Star className="h-4 w-4 text-accent" />
-                <span className="flex flex-col">
-                  <span className="font-display text-base text-foreground">
-                    Lee nuestras opiniones en Google
-                  </span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                    Piso7 Dental · {SITE.city}
-                  </span>
-                </span>
-                <ArrowUpRight className="ml-4 h-4 w-4 text-muted-foreground" />
-              </Link>
-            </Reveal>
-          </div>
-
-          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-[2px] border border-border-subtle bg-border-subtle sm:grid-cols-2">
-            {VALUES.map((v, i) => (
-              <Reveal key={v.code} delay={i * 0.08}>
-                <div className="bg-surface p-8">
-                  <span className="font-mono text-[11px] tracking-[0.2em] text-accent">
-                    {v.code}
-                  </span>
-                  <h3 className="mt-4 font-display text-2xl text-foreground">{v.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {v.description}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
+          ))}
         </div>
+        <Reveal><div className="mt-12 flex justify-center"><Link href={SITE.mapsUrl} target="_blank" className="group flex items-center gap-3 border-b border-gold-400 pb-2 font-mono text-[9px] uppercase tracking-[.22em] text-gold-300">Conoce las experiencias de nuestros pacientes <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"/></Link></div></Reveal>
       </div>
     </section>
   );
